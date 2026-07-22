@@ -1,0 +1,120 @@
+/* Esconder barra de rolagem (Chrome, Edge, Safari) */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Esconder barra de rolagem (Firefox) */
+html, body {
+    scrollbar-width: none;
+    -ms-overflow-style: none; /* IE/Edge antigo */
+}
+
+.card-formulario{
+    background-color: #fff;
+    border-radius:25px;
+    padding: 80px;
+    max-width: 380px;
+    margin: 40px auto;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  /* opcional: uma borda fina complementando a sombra */
+    border: 1px solid #a6a6a6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-formulario h1{
+    text-align: center;
+    margin-top: -50px;
+    border-bottom: 1px solid black;
+}
+
+.card-formulario h3{
+    text-align: left;
+    margin-top:50px;
+    margin-bottom: 40px;
+    background-color: #acabab;
+}
+
+
+
+input, textarea {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 10pt;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid black;
+    margin: 3px;
+}
+
+input:hover, textarea:hover{
+    background-color:rgb(226, 225, 225);
+    opacity: 1;
+}
+
+form{
+    margin: -10vh;
+    margin-top: 3vw;
+}
+
+fieldset{
+    margin:20px;
+    margin-bottom: 3vh;
+    display: inline-block;
+}
+
+
+legend{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color:black;
+}
+
+#sexo {
+    display: flex;
+    align-items: center;
+}
+
+/* Espaço entre cada bolinha e o texto ao lado dela */
+#sexo input[type="radio"] {
+    margin: 0 4px 0 12px;
+}
+
+/* A primeira bolinha não precisa de espaço à esquerda */
+#sexo input[type="radio"]:first-of-type {
+    margin-left: 0;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+}
+
+input {
+    display: inline-block;
+    width: 100%;
+}
+
+/* Campo de data de nascimento menor, já que não precisa da largura toda */
+input[type="date"] {
+    width: auto;
+}
+
+/* Labels do "Masculino" e "Feminino" coladas nas bolinhas */
+#sexo label {
+    width: auto;
+    margin: 0;
+}
+
+/* Esconder as setinhas dos campos type="number" (Chrome, Safari, Edge) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Esconder as setinhas dos campos type="number" (Firefox) */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
