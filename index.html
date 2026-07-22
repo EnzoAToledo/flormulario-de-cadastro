@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <div class="card-formulario">
+    <h1>Formulário de cadastro</h1>
+    <form>
+
+     <fieldset id="dados-pessoais"><legend>Dados pessoais</legend>  
+    
+    
+        <label class="nome">Nome</label>
+        <input type="text" id="nome" name="nome" size="15px" maxlength="30" placeholder="Nome">
+
+        <label class="sobrenome">Sobrenome</label>
+        <input type="text" id="sobrenome" name="sobrenome"size="15px" maxlength="60" placeholder="Sobrenome">
+
+        <label class="cpf">CPF</label>
+        <input type="number" id="cpf" name="cpf"size="15px" maxlength="14" placeholder="CPF">
+
+        <label class="email">email</label>
+        <input type="email" id="email" name="email"size="15px" maxlength="60" placeholder="Email@exemplo.com">
+
+        <label class="estado-civil">Estado Civil</label>
+        <input type="text" id="estado-civil" name="estado-civil"size="15px" maxlength="8" placeholder="Estado Civil">
+
+        <label class="numero-telefone">Número de telefone</label>
+        <input type="number" id="numero-telefone" nome="numero-telefone"size="15px" maxlength="11" placeholder="Telefone">
+
+        <label class="data-nascimento">Data de Nascimento</label><br>
+        <input type="date" id="data-nascimento" name="data-nascimento"size="15px" maxlength="30">
+
+        <fieldset id="sexo"><legend>Gênero</legend>
+            
+            <div class="generos">
+            <label class="genero-opcao">
+                Masculino
+            <input type="radio" name="genero" id="masc"></label>
+
+            <label class="genero-opcao">Feminino
+            <input type="radio" name="genero" id="fem"></label>
+</div>
+        </fieldset>
+        </fieldset>
