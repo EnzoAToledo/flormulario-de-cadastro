@@ -47,3 +47,42 @@
 </div>
         </fieldset>
         </fieldset>
+
+        <fieldset id="endereco"><legend>Endereço</legend>
+    
+    <label class="cep">CEP</label>
+        <input type="text" id="cep" name="cep"size="15px" maxlength="8" placeholder="12345-00">
+
+    <label class="cidade">Cidade</label>
+        <input type="text" id="cidade" name="cidade" size="15px" maxlength="70" placeholder="Cidade" list="cidade">
+        
+
+    <label class="estado">Estado</label><br>
+        <select nae="todoEst" id="campEst">
+        <optgroup label="Região Sudeste">
+            <option value="MG">Minas</option> Gerais</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="SP">São Paulo</option>
+        </optgroup>
+        <optgroup label="Região Sul">
+            <option value="PR" selected>Paraná</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="SC">Santa Catarina</option>
+    </optgroup>
+    </select>
+
+    <br><label class="endereco">Endereço</label>
+        <input type="text" id="endereco" name="endereco"size="15px" maxlength="70" placeholder="Endereço">
+
+    <label class="numero">Número</label>
+        <input type="number" id="numero" name="numero"size="15px" maxlength="6" placeholder="Número">
+
+    <label class="bairro">Bairro</label>
+        <input type="text" id="bairro" name="bairro"size="15px" maxlength="40" placeholder="Bairro">
+    
+    
+</fieldset>
+        </form>
+    </div>
+</body>
+</html>
